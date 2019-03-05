@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_t5_NsT8UEemK58-cNToU6w" label="gittest" description="test for git" language="java" technicalLabel="GITTEST" creationDate="2019-03-05T12:28:31.000+0530" author="_t5_Nsj8UEemK58-cNToU6w" productVersion="TIBCO Jaspersoft ETL-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/rajujhansi/talendtest.git&quot;,&quot;login&quot;:&quot;rajujhansi&quot;,&quot;passwd&quot;:&quot;L1ugH++Opc6ikaKpwy4b3Q==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false"/>
+  <TalendProperties:User xmi:id="_t5_Nsj8UEemK58-cNToU6w" login="sakula@abilitynetwork.com" firstName="raju" lastName="a" type="DI" additionnalData="{}"/>
+</xmi:XMI>

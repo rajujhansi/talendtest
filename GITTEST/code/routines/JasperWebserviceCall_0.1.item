@@ -1,0 +1,214 @@
+package routines;
+
+
+/*
+ * Copyright (c) 2003 - 2017 ABILITY Network Inc. All Rights Reserved.
+ *
+ * This computer program is CONFIDENTIAL and a TRADE SECRET of ABILITY Network Inc.
+ * The receipt or possession of this program does not convey any rights to use,
+ * reproduce or disclose its contents in whole or in part, without the specific
+ * written consent of ABILITY Network Inc. Any use, reproduction or disclosure of
+ * this program without the express written consent of ABILITY Network Inc. is a
+ * violation of the copyright laws and may subject you to criminal prosecution.
+ */
+
+
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.http.*;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+
+/**
+ * @author rupalig
+ * This class helps to call Rest web services supported by Jasper Server
+ */
+public class JasperWebserviceCall {
+    private final static Log logger = LogFactory.getLog(JasperWebserviceCall.class);
+    private Properties contextProperties = null;
+
+    /**
+     * {@link JasperWebserviceCall} constructor that expects jasper server details in the contextProperties
+     *
+     * @param contextProperties : TIBCO Jasper Server details
+     */
+    public JasperWebserviceCall(Properties contextProperties) {
+        this.contextProperties = contextProperties;
+    }
+
+    /**
+     * This method creates folder in jasper server for each customer
+     *
+     * @param customers list of customers
+     */
+    public void createFolder(final List<DimCustomer> customers) {
+        System.out.println("createFolder method start");
+        final RestTemplate restTemplate = new RestTemplate();
+        final HttpHeaders headers = populateHeaders();
+        final HttpEntity<String> entity = new HttpEntity<String>(headers);
+        ResponseEntity<String> response = null;
+
+        DimCustomer customer = null;
+        String newFolderName = null;
+        String createFolderServiceTemp = "http://" + contextProperties.getProperty("Jasperhost") + ":" + contextProperties.getProperty("JasperServerPort") + "/easereports/rest_v2/resources/organizations/organization_1/reports/Adhoc_Reports/$P{newFolderName}/temp?overwrite=true&type=folder";
+        String createFolderService=null;
+        for (int customerCount = 0; customerCount < customers.size(); customerCount++) {
+            customer = customers.get(customerCount);
+            newFolderName = customer.getCustomerName().replaceAll("[^\\p{N}\\p{L}\\p{Z}]","").replace(" ","_");
+            createFolderService = createFolderServiceTemp.replace("$P{newFolderName}", newFolderName);
+            try {
+                response = restTemplate
+                        .exchange(createFolderService, HttpMethod.PUT, entity, String.class);
+                System.out.println(response);
+                if (response.getStatusCode().equals(HttpStatus.CREATED) || response.getStatusCode().equals(HttpStatus.OK)) {
+                	removeDefaultAccess(newFolderName);
+                    applyPermission(customer.getUserList(), newFolderName);                   
+                }
+            } catch (Exception e) {
+                System.out.println(e.getCause());
+                e.printStackTrace();
+            }
+
+            
+
+        }
+        System.out.println("createFolder method start");
+
+    }
+
+    /**
+     * This method apply user permissions (Read Only, Read-Write) to newly created folder based on user's role
+     *
+     * @param users         List of users
+     * @param newFolderName newly created folder
+     */
+    public void applyPermission(final List<DimUser> users, final String newFolderName) {
+
+        System.out.println("applyPermission method start");
+        final RestTemplate restTemplate = new RestTemplate();
+        final HttpHeaders headers = populateHeaders();
+        ResponseEntity<String> response = null;
+        HttpEntity<String> entity = null;
+
+        DimUser user = null;
+        StringBuilder body = null;
+        final String uri = "/organizations/organization_1/reports/Adhoc_Reports/".concat(newFolderName);
+        final String permissionsService = "http://" + contextProperties.getProperty("Jasperhost") + ":" + contextProperties.getProperty("JasperServerPort") + "/easereports/rest_v2/permissions?recipient=user";
+
+        for (int userCount = 0; userCount < users.size(); userCount++) {
+            user = users.get(userCount);
+            body = new StringBuilder();
+            body.append("{\"uri\":");
+            body.append("\"" + uri + "\", ");
+            body.append("\"recipient\":");
+            body.append("\"user:/" + user.getUsername() + "\", ");
+            body.append("\"mask\":");
+            body.append((user.getUserSourceType().intValue() == 30) ? "\"6\"" : "\"2\"");
+            body.append(" }");
+            System.out.println(body.toString());
+
+            entity = new HttpEntity<String>(body.toString(), headers);
+            try {
+                response = restTemplate
+                        .exchange(permissionsService, HttpMethod.POST, entity, String.class);
+                System.out.println(response);
+            } catch (Exception e) {
+                System.out.println( e.getCause());
+                e.printStackTrace();
+            }
+
+
+        }
+        System.out.println("applyPermission method end");
+
+    }
+    
+
+    /**
+     * This method remove default read only access for ROLE_USER from newly created folder
+     *
+     * @param newFolderName newly created folder
+     */
+    public void removeDefaultAccess( final String newFolderName) {
+
+        System.out.println("applyPermission method start");
+        final RestTemplate restTemplate = new RestTemplate();
+        final HttpHeaders headers = populateHeaders();
+        ResponseEntity<String> response = null;
+        HttpEntity<String> entity = null;
+
+        StringBuilder body = null;
+        final String uri = "/organizations/organization_1/reports/Adhoc_Reports/".concat(newFolderName);
+        final String permissionsService = "http://" + contextProperties.getProperty("Jasperhost") + ":" + contextProperties.getProperty("JasperServerPort") + "/easereports/rest_v2/permissions";
+
+
+            body = new StringBuilder();
+            body.append("{\"uri\":");
+            body.append("\"" + uri + "\", ");
+            body.append("\"recipient\":");
+            body.append("\"role:/ROLE_USER\", ");
+            body.append("\"mask\": \"0\"");
+            body.append(" }");
+            System.out.println(body.toString());
+
+            entity = new HttpEntity<String>(body.toString(), headers);
+            try {
+                response = restTemplate
+                        .exchange(permissionsService, HttpMethod.POST, entity, String.class);
+                System.out.println(response);
+            } catch (Exception e) {
+                System.out.println(e.getCause());
+                e.printStackTrace();
+            }
+
+
+
+        System.out.println("applyPermission method end");
+
+    }
+
+
+    /**
+     * This method returns HttpHeaders with pre-populated content type, accept, and authentication
+     *
+     * @return HttpHeaders
+     */
+    private HttpHeaders populateHeaders() {
+        final HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        final ArrayList<MediaType> mediaTypeList = new ArrayList<MediaType>();
+        mediaTypeList.add(MediaType.APPLICATION_JSON);
+        headers.setAccept(mediaTypeList);
+        final String basicAuth = getBasicAuth();
+        headers.add("authorization", basicAuth);
+        return headers;
+    }
+
+    /**
+     * This method return encoded string for basic authentication
+     *
+     * @return String
+     */
+    private String getBasicAuth() {
+        System.out.println("getBasicAuth method start");
+        String authHeader = null;
+        try {
+            String username = contextProperties.getProperty("JasperServerUserName");
+            String password = contextProperties.getProperty("JasperServerPassword");
+            String auth = username + ":" + password;
+            byte[] encodedAuth = Base64.encodeBase64(auth.getBytes());
+            authHeader = "Basic " + new String(encodedAuth);
+        } catch (Exception e) {
+            System.out.println(e.getCause());
+            e.printStackTrace();
+        }
+        System.out.println("getBasicAuth method end");
+        return authHeader;
+    }
+
+
+}

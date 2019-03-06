@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_t5_NsT8UEemK58-cNToU6w" label="gittest" description="test for git" language="java" technicalLabel="GITTEST" creationDate="2019-03-05T12:28:31.000+0530" author="_t5_Nsj8UEemK58-cNToU6w" productVersion="TIBCO Jaspersoft ETL-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/rajujhansi/talendtest.git&quot;,&quot;login&quot;:&quot;rajujhansi&quot;,&quot;passwd&quot;:&quot;L1ugH++Opc6ikaKpwy4b3Q==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_t5_NsT8UEemK58-cNToU6w" label="gittest" description="test for git" language="java" technicalLabel="GITTEST" creationDate="2019-03-05T12:28:31.000+0530" author="_t5_Nsj8UEemK58-cNToU6w" productVersion="TIBCO Jaspersoft ETL-6.4.1.20180911_1406-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/rajujhansi/talendtest.git&quot;,&quot;login&quot;:&quot;rajujhansi&quot;,&quot;passwd&quot;:&quot;L1ugH++Opc6ikaKpwy4b3Q==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3" bigData="false">
     <technicalStatus xmi:id="_uB07ED8UEemK58-cNToU6w" label="development" code="DEV"/>
     <technicalStatus xmi:id="_uB07ET8UEemK58-cNToU6w" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_uB07Ej8UEemK58-cNToU6w" label="production" code="PROD"/>
@@ -339,4 +339,5 @@
     <migrationTask xmi:id="_u4ePiz8UEemK58-cNToU6w" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_t5_Nsj8UEemK58-cNToU6w" login="sakula@abilitynetwork.com" firstName="raju" lastName="a" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_LUQswT_5Eemy9_1d2Bl0qA" login="sakula@emids.com" firstName="sugunakar" lastName="a" type="DI" additionnalData="{}"/>
 </xmi:XMI>

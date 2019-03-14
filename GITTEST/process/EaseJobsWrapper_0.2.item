@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="/etc/ETLvar-v2.txt"/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="D:\ETL\ETLvar.txt"/>
     <contextParameter comment="" name="BulkStagingPath" prompt="BulkStagingPath?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value="/home/empadmin/BulkWrite.txt"/>
     <contextParameter comment="" name="CustomerList" prompt="CustomerList?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value="null"/>
     <contextParameter comment="" name="DestinationDB" prompt="DestinationDB?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value="ease_analytics_v2"/>
@@ -34,7 +34,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx3072M&quot;,&quot;-Dfile.encoding=utf-8&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="4" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>

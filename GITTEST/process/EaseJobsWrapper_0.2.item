@@ -289,7 +289,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Source and Target DB Configuration parameters loaded&quot;);&#xA;System.out.println(context.Jasperhost);&#xA;System.out.println(Runtime.getRuntime().freeMemory());&#xA;System.out.println(Runtime.getRuntime().availableProcessors());&#xA;System.out.println();&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Source and Target DB Configuration parameters loaded&quot;);&#xA;System.out.println(context.Jasperhost);&#xA;System.out.println(Runtime.getRuntime().freeMemory());&#xA;System.out.println(Runtime.getRuntime().availableProcessors());&#xA;System.out.println(Runtime.getRuntime().totalMemory());&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="Message"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>

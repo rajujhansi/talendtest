@@ -56,6 +56,7 @@
       <relatedItems xmi:id="_PM_Kim2bEemPVfUFRKQWsA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_PM_Ki22bEemPVfUFRKQWsA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>documentations/Raju</deletedFolders>
     <migrationTask xmi:id="_t_jqMD8UEemK58-cNToU6w" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_t_jqMT8UEemK58-cNToU6w" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_t_jqMj8UEemK58-cNToU6w" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>

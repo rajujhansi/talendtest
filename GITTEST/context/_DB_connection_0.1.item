@@ -1,30 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_wktk0EY2EemCieIQxDo_Gw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_wktk0UY2EemCieIQxDo_Gw" comment="" name="DestinationDBhost" prompt="DestinationDBhost?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
-  <contextParameter xmi:id="_wktk0kY2EemCieIQxDo_Gw" comment="" name="DestinationDB" prompt="DestinationDB?" promptNeeded="false" type="id_String" value="ease_analytics_v2"/>
-  <contextParameter xmi:id="_wktk00Y2EemCieIQxDo_Gw" comment="" name="DestinationDBusername" prompt="DestinationDBusername?" promptNeeded="false" type="id_String" value="snavani"/>
-  <contextParameter xmi:id="_wktk1EY2EemCieIQxDo_Gw" comment="" name="DestinationDBpassword" prompt="DestinationDBpassword?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
-  <contextParameter xmi:id="_wktk1UY2EemCieIQxDo_Gw" comment="" name="DestinationDBport" prompt="DestinationDBport?" promptNeeded="false" type="id_String" value="3306"/>
-  <contextParameter xmi:id="_wktk1kY2EemCieIQxDo_Gw" comment="" name="SourceDBhost" prompt="SourceDBhost?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
-  <contextParameter xmi:id="_wktk10Y2EemCieIQxDo_Gw" comment="" name="SourceDB" prompt="SourceDB?" promptNeeded="false" type="id_String" value="ddez"/>
-  <contextParameter xmi:id="_wktk2EY2EemCieIQxDo_Gw" comment="" name="SourceDBUsername" prompt="SourceDBUsername?" promptNeeded="false" type="id_String" value="snavani"/>
-  <contextParameter xmi:id="_wktk2UY2EemCieIQxDo_Gw" comment="" name="SourceDBpassword" prompt="SourceDBpassword?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
-  <contextParameter xmi:id="_wktk2kY2EemCieIQxDo_Gw" comment="" name="SourceDBport" prompt="SourceDBport?" promptNeeded="false" type="id_String" value="3306"/>
-  <contextParameter xmi:id="_wktk20Y2EemCieIQxDo_Gw" comment="" name="LastUpdateTime" prompt="LastUpdateTime?" promptNeeded="false" type="id_String" value="01 Jan 01 01:01:01"/>
-  <contextParameter xmi:id="_wktk3EY2EemCieIQxDo_Gw" comment="" name="JasperDB" prompt="JasperDB?" promptNeeded="false" type="id_String" value="jasperserver"/>
-  <contextParameter xmi:id="_wktk3UY2EemCieIQxDo_Gw" comment="" name="Jasperhost" prompt="Jasperhost?" promptNeeded="false" type="id_String" value="easejspa001"/>
-  <contextParameter xmi:id="_wktk3kY2EemCieIQxDo_Gw" comment="" name="Jasperpassword" prompt="Jasperpassword?" promptNeeded="false" type="id_String" value="password"/>
-  <contextParameter xmi:id="_wktk30Y2EemCieIQxDo_Gw" comment="" name="Jasperport" prompt="Jasperport?" promptNeeded="false" type="id_String" value="5432"/>
-  <contextParameter xmi:id="_wktk4EY2EemCieIQxDo_Gw" comment="" name="Jasperusername" prompt="Jasperusername?" promptNeeded="false" type="id_String" value="jasperdb"/>
-  <contextParameter xmi:id="_wktk4UY2EemCieIQxDo_Gw" comment="" name="CustomerList" prompt="CustomerList?" promptNeeded="false" type="id_String" value="null"/>
-  <contextParameter xmi:id="_wktk4kY2EemCieIQxDo_Gw" comment="" name="BulkStagingPath" prompt="BulkStagingPath?" promptNeeded="false" type="id_String" value="/home/empadmin/BulkWrite.txt"/>
-  <contextParameter xmi:id="_wktk40Y2EemCieIQxDo_Gw" comment="" name="Jasperhost2" prompt="Jasperhost2?" promptNeeded="false" type="id_String" value="10.164.3.48"/>
-  <contextParameter xmi:id="_wktk5EY2EemCieIQxDo_Gw" comment="" name="SourceDB_EASE" prompt="SourceDB_EASE?" promptNeeded="false" type="id_String" value="ease"/>
-  <contextParameter xmi:id="_wktk5UY2EemCieIQxDo_Gw" comment="" name="SourceDBhost_EASE" prompt="SourceDBhost_EASE?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
-  <contextParameter xmi:id="_wktk5kY2EemCieIQxDo_Gw" comment="" name="SourceDBpassword_EASE" prompt="SourceDBpassword_EASE?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
-  <contextParameter xmi:id="_wktk50Y2EemCieIQxDo_Gw" comment="" name="SourceDBport_EASE" prompt="SourceDBport_EASE?" promptNeeded="false" type="id_String" value="3306"/>
-  <contextParameter xmi:id="_wktk6EY2EemCieIQxDo_Gw" comment="" name="SourceDBUsername_EASE" prompt="SourceDBUsername_EASE?" promptNeeded="false" type="id_String" value="snavani"/>
-  <contextParameter xmi:id="_wktk6UY2EemCieIQxDo_Gw" comment="" name="JasperServerPassword" prompt="JasperServerPassword?" promptNeeded="false" type="id_String" value="superuser"/>
-  <contextParameter xmi:id="_wktk6kY2EemCieIQxDo_Gw" comment="" name="JasperServerPort" prompt="JasperServerPort?" promptNeeded="false" type="id_String" value="8080"/>
-  <contextParameter xmi:id="_wktk60Y2EemCieIQxDo_Gw" comment="" name="JasperServerUserName" prompt="JasperServerUserName?" promptNeeded="false" type="id_String" value="superuser"/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_wktk0EY2EemCieIQxDo_Gw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_wktk0UY2EemCieIQxDo_Gw" comment="" name="DestinationDBhost" prompt="DestinationDBhost?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
+    <contextParameter xmi:id="_wktk0kY2EemCieIQxDo_Gw" comment="" name="DestinationDB" prompt="DestinationDB?" promptNeeded="false" type="id_String" value="ease_analytics_v2"/>
+    <contextParameter xmi:id="_wktk00Y2EemCieIQxDo_Gw" comment="" name="DestinationDBusername" prompt="DestinationDBusername?" promptNeeded="false" type="id_String" value="sakula"/>
+    <contextParameter xmi:id="_wktk1EY2EemCieIQxDo_Gw" comment="" name="DestinationDBpassword" prompt="DestinationDBpassword?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
+    <contextParameter xmi:id="_wktk1UY2EemCieIQxDo_Gw" comment="" name="DestinationDBport" prompt="DestinationDBport?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_wktk1kY2EemCieIQxDo_Gw" comment="" name="SourceDBhost" prompt="SourceDBhost?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
+    <contextParameter xmi:id="_wktk10Y2EemCieIQxDo_Gw" comment="" name="SourceDB" prompt="SourceDB?" promptNeeded="false" type="id_String" value="ddez"/>
+    <contextParameter xmi:id="_wktk2EY2EemCieIQxDo_Gw" comment="" name="SourceDBUsername" prompt="SourceDBUsername?" promptNeeded="false" type="id_String" value="sakula"/>
+    <contextParameter xmi:id="_wktk2UY2EemCieIQxDo_Gw" comment="" name="SourceDBpassword" prompt="SourceDBpassword?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
+    <contextParameter xmi:id="_wktk2kY2EemCieIQxDo_Gw" comment="" name="SourceDBport" prompt="SourceDBport?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_wktk20Y2EemCieIQxDo_Gw" comment="" name="LastUpdateTime" prompt="LastUpdateTime?" promptNeeded="false" type="id_String" value="01 Jan 01 01:01:01"/>
+    <contextParameter xmi:id="_wktk3EY2EemCieIQxDo_Gw" comment="" name="JasperDB" prompt="JasperDB?" promptNeeded="false" type="id_String" value="jasperserver"/>
+    <contextParameter xmi:id="_wktk3UY2EemCieIQxDo_Gw" comment="" name="Jasperhost" prompt="Jasperhost?" promptNeeded="false" type="id_String" value="easejspa001"/>
+    <contextParameter xmi:id="_wktk3kY2EemCieIQxDo_Gw" comment="" name="Jasperpassword" prompt="Jasperpassword?" promptNeeded="false" type="id_String" value="password"/>
+    <contextParameter xmi:id="_wktk30Y2EemCieIQxDo_Gw" comment="" name="Jasperport" prompt="Jasperport?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_wktk4EY2EemCieIQxDo_Gw" comment="" name="Jasperusername" prompt="Jasperusername?" promptNeeded="false" type="id_String" value="jasperdb"/>
+    <contextParameter xmi:id="_wktk4UY2EemCieIQxDo_Gw" comment="" name="CustomerList" prompt="CustomerList?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter xmi:id="_wktk4kY2EemCieIQxDo_Gw" comment="" name="BulkStagingPath" prompt="BulkStagingPath?" promptNeeded="false" type="id_String" value="/home/empadmin/BulkWrite.txt"/>
+    <contextParameter xmi:id="_wktk40Y2EemCieIQxDo_Gw" comment="" name="Jasperhost2" prompt="Jasperhost2?" promptNeeded="false" type="id_String" value="10.164.3.48"/>
+    <contextParameter xmi:id="_wktk5EY2EemCieIQxDo_Gw" comment="" name="SourceDB_EASE" prompt="SourceDB_EASE?" promptNeeded="false" type="id_String" value="ease"/>
+    <contextParameter xmi:id="_wktk5UY2EemCieIQxDo_Gw" comment="" name="SourceDBhost_EASE" prompt="SourceDBhost_EASE?" promptNeeded="false" type="id_String" value="208.79.195.251"/>
+    <contextParameter xmi:id="_wktk5kY2EemCieIQxDo_Gw" comment="" name="SourceDBpassword_EASE" prompt="SourceDBpassword_EASE?" promptNeeded="false" type="id_String" value="test1234!@#$"/>
+    <contextParameter xmi:id="_wktk50Y2EemCieIQxDo_Gw" comment="" name="SourceDBport_EASE" prompt="SourceDBport_EASE?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_wktk6EY2EemCieIQxDo_Gw" comment="" name="SourceDBUsername_EASE" prompt="SourceDBUsername_EASE?" promptNeeded="false" type="id_String" value="sakula"/>
+    <contextParameter xmi:id="_wktk6UY2EemCieIQxDo_Gw" comment="" name="JasperServerPassword" prompt="JasperServerPassword?" promptNeeded="false" type="id_String" value="superuser"/>
+    <contextParameter xmi:id="_wktk6kY2EemCieIQxDo_Gw" comment="" name="JasperServerPort" prompt="JasperServerPort?" promptNeeded="false" type="id_String" value="8080"/>
+    <contextParameter xmi:id="_wktk60Y2EemCieIQxDo_Gw" comment="" name="JasperServerUserName" prompt="JasperServerUserName?" promptNeeded="false" type="id_String" value="superuser"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_7O86QHDFEemcErYS7Y-c4w" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_7O86QXDFEemcErYS7Y-c4w" comment="" name="DestinationDBhost" prompt="DestinationDBhost?" promptNeeded="false" type="id_String" value="10.164.5.1"/>
+    <contextParameter xmi:id="_7O86QnDFEemcErYS7Y-c4w" comment="" name="DestinationDB" prompt="DestinationDB?" promptNeeded="false" type="id_String" value="ease_analytics_v2"/>
+    <contextParameter xmi:id="_7O86Q3DFEemcErYS7Y-c4w" comment="" name="DestinationDBusername" prompt="DestinationDBusername?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_7O86RHDFEemcErYS7Y-c4w" comment="" name="DestinationDBpassword" prompt="DestinationDBpassword?" promptNeeded="false" type="id_String" value="password"/>
+    <contextParameter xmi:id="_7O86RXDFEemcErYS7Y-c4w" comment="" name="DestinationDBport" prompt="DestinationDBport?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_7O86RnDFEemcErYS7Y-c4w" comment="" name="SourceDBhost" prompt="SourceDBhost?" promptNeeded="false" type="id_String" value="10.164.5.1"/>
+    <contextParameter xmi:id="_7O86R3DFEemcErYS7Y-c4w" comment="" name="SourceDB" prompt="SourceDB?" promptNeeded="false" type="id_String" value="ddez"/>
+    <contextParameter xmi:id="_7O86SHDFEemcErYS7Y-c4w" comment="" name="SourceDBUsername" prompt="SourceDBUsername?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_7O86SXDFEemcErYS7Y-c4w" comment="" name="SourceDBpassword" prompt="SourceDBpassword?" promptNeeded="false" type="id_String" value="password"/>
+    <contextParameter xmi:id="_7O86SnDFEemcErYS7Y-c4w" comment="" name="SourceDBport" prompt="SourceDBport?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_7O86S3DFEemcErYS7Y-c4w" comment="" name="LastUpdateTime" prompt="LastUpdateTime?" promptNeeded="false" type="id_String" value="01 Jan 01 01:01:01"/>
+    <contextParameter xmi:id="_7O86THDFEemcErYS7Y-c4w" comment="" name="JasperDB" prompt="JasperDB?" promptNeeded="false" type="id_String" value="jasperserver"/>
+    <contextParameter xmi:id="_7O86TXDFEemcErYS7Y-c4w" comment="" name="Jasperhost" prompt="Jasperhost?" promptNeeded="false" type="id_String" value="easejspa001"/>
+    <contextParameter xmi:id="_7O86TnDFEemcErYS7Y-c4w" comment="" name="Jasperpassword" prompt="Jasperpassword?" promptNeeded="false" type="id_String" value="password"/>
+    <contextParameter xmi:id="_7O86T3DFEemcErYS7Y-c4w" comment="" name="Jasperport" prompt="Jasperport?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_7O86UHDFEemcErYS7Y-c4w" comment="" name="Jasperusername" prompt="Jasperusername?" promptNeeded="false" type="id_String" value="jasperdb"/>
+    <contextParameter xmi:id="_7O86UXDFEemcErYS7Y-c4w" comment="" name="CustomerList" prompt="CustomerList?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter xmi:id="_7O86UnDFEemcErYS7Y-c4w" comment="" name="BulkStagingPath" prompt="BulkStagingPath?" promptNeeded="false" type="id_String" value="/home/empadmin/BulkWrite.txt"/>
+    <contextParameter xmi:id="_7O86U3DFEemcErYS7Y-c4w" comment="" name="Jasperhost2" prompt="Jasperhost2?" promptNeeded="false" type="id_String" value="10.164.3.48"/>
+    <contextParameter xmi:id="_7O86VHDFEemcErYS7Y-c4w" comment="" name="SourceDB_EASE" prompt="SourceDB_EASE?" promptNeeded="false" type="id_String" value="ease"/>
+    <contextParameter xmi:id="_7O86VXDFEemcErYS7Y-c4w" comment="" name="SourceDBhost_EASE" prompt="SourceDBhost_EASE?" promptNeeded="false" type="id_String" value="10.164.5.1"/>
+    <contextParameter xmi:id="_7O86VnDFEemcErYS7Y-c4w" comment="" name="SourceDBpassword_EASE" prompt="SourceDBpassword_EASE?" promptNeeded="false" type="id_String" value="password"/>
+    <contextParameter xmi:id="_7O86V3DFEemcErYS7Y-c4w" comment="" name="SourceDBport_EASE" prompt="SourceDBport_EASE?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_7O86WHDFEemcErYS7Y-c4w" comment="" name="SourceDBUsername_EASE" prompt="SourceDBUsername_EASE?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_7O86WXDFEemcErYS7Y-c4w" comment="" name="JasperServerPassword" prompt="JasperServerPassword?" promptNeeded="false" type="id_String" value="superuser"/>
+    <contextParameter xmi:id="_7O86WnDFEemcErYS7Y-c4w" comment="" name="JasperServerPort" prompt="JasperServerPort?" promptNeeded="false" type="id_String" value="8080"/>
+    <contextParameter xmi:id="_7O86W3DFEemcErYS7Y-c4w" comment="" name="JasperServerUserName" prompt="JasperServerUserName?" promptNeeded="false" type="id_String" value="superuser"/>
+  </talendfile:ContextType>
+</xmi:XMI>

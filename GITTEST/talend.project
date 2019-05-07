@@ -69,6 +69,20 @@
       <relatedItems xmi:id="_LDcWum2lEemPVfUFRKQWsA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LDcWu22lEemPVfUFRKQWsA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_DU7i4HDGEemcErYS7Y-c4w">
+      <baseItem xmi:id="_DU7i4XDGEemcErYS7Y-c4w" id="_9e0rIHDFEemcErYS7Y-c4w" version="0.1" type="job"/>
+      <relatedItems xmi:id="_DU7i4nDGEemcErYS7Y-c4w" id="_mvBxIDaEEeWK7I6MR2YWDA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_DU7i43DGEemcErYS7Y-c4w" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i5HDGEemcErYS7Y-c4w" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i5XDGEemcErYS7Y-c4w" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i5nDGEemcErYS7Y-c4w" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i53DGEemcErYS7Y-c4w" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i6HDGEemcErYS7Y-c4w" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i6XDGEemcErYS7Y-c4w" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i6nDGEemcErYS7Y-c4w" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i63DGEemcErYS7Y-c4w" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DU7i7HDGEemcErYS7Y-c4w" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_t_jqMD8UEemK58-cNToU6w" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_t_jqMT8UEemK58-cNToU6w" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_t_jqMj8UEemK58-cNToU6w" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>

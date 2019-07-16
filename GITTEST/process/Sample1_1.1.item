@@ -215,7 +215,7 @@
     <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="true"/>
     <elementParameter field="TABLE" name="CONDITIONS">
       <elementValue elementRef="INPUT_COLUMN" value="name"/>
-      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.toUpperCase().charAt(0) $operator $target"/>
+      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.matches($target) $operator true"/>
       <elementValue elementRef="OPERATOR" value="=="/>
       <elementValue elementRef="RVALUE" value="&quot;Raju&quot;"/>
     </elementParameter>

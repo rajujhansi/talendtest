@@ -398,7 +398,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCreateTemporaryFile_1" show="false"/>
     <elementParameter field="CHECK" name="REMOVE" value="false"/>
     <elementParameter field="CHECK" name="USE_DEFAULT_DIR" value="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/etc/ETL/logs&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:\\ETL\\&quot;"/>
     <elementParameter field="LABEL" name="INFO_RANGE" value="the temporary file name should include template &quot;XXXX&quot;."/>
     <elementParameter field="TEXT" name="TEMPLATE" value="&quot;ease-etl-logs-&quot;+new SimpleDateFormat(&quot;MMddYYYYHHmm&quot;).format(new java.util.Date())"/>
     <elementParameter field="TEXT" name="SUFFIX" value="&quot;log&quot;"/>

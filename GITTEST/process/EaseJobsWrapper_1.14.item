@@ -457,6 +457,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
     <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="true"/>
     <elementParameter field="TEXT" name="RESUMLABEL" value="logfilecreation"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value="Log file creation failed ?"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tCreateTemporaryFile_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>

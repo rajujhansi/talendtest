@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="/etc/ETLvar-v2.txt"/>
-    <contextParameter comment="" name="logsfolderpath" prompt="logsfolderpath?" promptNeeded="false" type="id_String" value="/etc/ETL/logs"/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="D:\\ETL\\ETLvar.txt"/>
+    <contextParameter comment="" name="logsfolderpath" prompt="logsfolderpath?" promptNeeded="false" type="id_String" value="D:\\ETL"/>
     <contextParameter comment="" name="BulkStagingPath" prompt="BulkStagingPath?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value=""/>
     <contextParameter comment="" name="CustomerList" prompt="CustomerList?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value="null"/>
     <contextParameter comment="" name="DestinationDB" prompt="DestinationDB?" promptNeeded="false" repositoryContextId="_mvBxIDaEEeWK7I6MR2YWDA" type="id_String" value=""/>

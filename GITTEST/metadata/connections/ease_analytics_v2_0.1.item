@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_ApYy8KlLEemc4dwLESmj9g" name="ease_analytics_v2" id="_2o0s8KlKEemc4dwLESmj9g" label="ease_analytics_v2" dataPackage="_BXnK4KlLEemc4dwLESmj9g" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://10.164.3.45:3306/ease?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="easeapp" Password="zmYSkOJljYtoAqMSRzcOxA==" ServerName="10.164.3.45" DatasourceName="" FileFieldName="" SID="ease" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_ApZaAKlLEemc4dwLESmj9g" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_Apm1YKlLEemc4dwLESmj9g" tag="package filter" value=""/>
+    <taggedValue xmi:id="_AprG0KlLEemc4dwLESmj9g" tag="Status" value=""/>
+    <taggedValue xmi:id="_AprG0alLEemc4dwLESmj9g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_AprG0qlLEemc4dwLESmj9g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_AprG06lLEemc4dwLESmj9g" tag="Description" value=""/>
+    <taggedValue xmi:id="_AprG1KlLEemc4dwLESmj9g" tag="Author" value=""/>
+    <taggedValue xmi:id="_Aprt4KlLEemc4dwLESmj9g" tag="otherParameter"/>
+    <taggedValue xmi:id="_A_NR8KlLEemc4dwLESmj9g" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_A_NR8alLEemc4dwLESmj9g" tag="DB ProductVersion" value="5.5.45-log"/>
+    <taggedValue xmi:id="_A_NR8qlLEemc4dwLESmj9g" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_ApZaAalLEemc4dwLESmj9g" key="CONN_PARA_KEY_USERNAME" value="easeapp"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_BXnK4KlLEemc4dwLESmj9g" name="ease" dataManager="_ApYy8KlLEemc4dwLESmj9g"/>
+</xmi:XMI>
